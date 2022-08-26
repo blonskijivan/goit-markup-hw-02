@@ -2,8 +2,6 @@
   --main-cl: #757575; 
   --secondary-cl: #212121;
   --active-cl: #2196F3;
-  --page-width: 1600px;
-  --section-width: 1170px;
   --primary-white-color: #ffffff;
   --main-dark-bg-color: #2F303A;
   --light-gray-color: #F5F4FA;
@@ -24,11 +22,9 @@ header {
     border-bottom: 1px solid #ECECEC;
 }
 .header-inner {
-    height: 80px;
-    max-width: var(--section-width);
     margin: 0 auto;
 }
-.main-nav a.logo {
+.main-nav .logo {
     margin-right: 93px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -38,20 +34,20 @@ header {
     color: var(--active-cl);
     text-decoration: none;
 }
-.main-nav a.logo span {
+.main-nav .logo span {
     color: var(--secondary-cl);
 }
-.main-nav .menu {
+.menu {
     margin: 0;
     padding: 0;
     list-style: none;
 } 
 
-ul.menu li {
+.menu-item {
     margin-right: 50px;
 }
 
-ul.menu li a {
+.menu-link {
     color: var(--secondary-cl);
     text-decoration: none;
     font-size: 14px;
@@ -59,23 +55,23 @@ ul.menu li a {
     letter-spacing: 0.02em;
     font-weight: 500;
 }
-ul.menu li a.active,
-ul.menu li a:hover,
-ul.menu li a:focus {
+.menu-link.active,
+.menu-link:hover,
+.menu-link:focus {
     color: var(--active-cl);
     
 }
-ul.contact-info {
+.contact-info {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-ul.contact-info li {
+.contact-info-item {
     display: inline-block;
     margin-left: 50px;
 }
-ul.contact-info li a {
+.contact-info-link {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -86,8 +82,8 @@ ul.contact-info li a {
     letter-spacing: 0.02em;
   
 }
-ul.contact-info li a:hover,
-ul.contact-info li a:focus  {
+.contact-info-link:hover,
+.contact-info-link:focus  {
     color: var(--active-cl);
 }
 
@@ -100,7 +96,7 @@ ul.contact-info li a:focus  {
     background-color: var(--main-dark-bg-color);
     color: var(--primary-white-color);
 }
-.promo h1 {
+.promo-title {
     max-width: 696px;
     font-weight: 900;
     font-size: 44px;
@@ -108,7 +104,7 @@ ul.contact-info li a:focus  {
     text-transform: uppercase;
     text-align: center;
 }
-.promo button {
+.promo-button {
     padding: 0;
     background-color: var(--active-cl);
     border: 0;
@@ -122,9 +118,9 @@ ul.contact-info li a:focus  {
     cursor: pointer;
     letter-spacing: normal;
 } 
-.promo button:active,
-.promo button:hover,
-.promo button:focus {
+.promo-button:active,
+.promo-button:hover,
+.promo-button:focus {
     background-color: #188CE8;
 }
 
@@ -145,15 +141,15 @@ ul.contact-info li a:focus  {
     clip-path: inset(50%);
     margin: -1px;
   } 
-.features ul {
+.features-list {
     margin: 0 -10px;
     padding: 0;
     list-style: none;
 }
-.features ul li {
+.features-item {
     margin: 0 15px;
 }
-.features ul li h3 {
+.features-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
@@ -161,7 +157,7 @@ ul.contact-info li a:focus  {
     text-transform: uppercase;
     color: var(--secondary-cl);
 }
-.features ul li p {
+.features-descr {
     font-size: 14px;
     line-height: 1.7;
 }
@@ -170,21 +166,12 @@ ul.contact-info li a:focus  {
     margin: 0 auto 94px;
     max-width: var(--section-width);
 }
-.portfolio h2 {
-    margin: 0 0 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: inherit;
-    color: var(--secondary-cl);
-}
-.portfolio ul {
+.portfolio-list {
     margin: 0 -15px;
     padding: 0;
     list-style: none;
 }
-.portfolio ul li {
+.portfolio-item {
     margin: 0 15px;
 }
 /*Section team*/
@@ -194,7 +181,7 @@ ul.contact-info li a:focus  {
     max-width: 1600px;
     background-color: var(--light-gray-color)
 }
-.team h2 {
+.section-title {
     margin: 0 0 50px;
     font-weight: 700;
     font-size: 36px;
@@ -203,18 +190,18 @@ ul.contact-info li a:focus  {
     letter-spacing: inherit;
     color: var(--secondary-cl);
 }
-.team ul {
+.team-list {
     margin: 0 -15px;
     padding: 0;
     list-style: none;
 }
-.team ul li {
+.team-item {
     margin: 0 15px;
     background: var(--primary-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
-.team ul li h3 {
+.team-title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;    
@@ -222,7 +209,7 @@ ul.contact-info li a:focus  {
     letter-spacing: inherit;
     color: var(--secondary-cl);
 }
-.team ul li p {
+.team-description {
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
@@ -254,27 +241,27 @@ footer .logo {
 footer .logo span {
     color: var(--primary-white-color);
 }
-footer address ul {
+.address-list {
     margin: 0;
     padding: 0;
     list-style: none;
 } 
-footer address li {
+.address-item {
     margin-bottom: 9px;
 }
-footer address a {
+.address-link {
     color: inherit;
     font-size: inherit;
     line-height: inherit;
     text-decoration: none;
     font-style: normal;
 }
-footer address a.email,
-footer address a.tel {
+.address-link.email,
+.address-link.tel {
     color: rgba(255, 255, 255, 0.6);
 } 
-footer address a:hover,
-footer address a:focus {
+.address-link:hover,
+.address-link:focus {
     color: var(--active-cl);
 } 
 .projects {
@@ -285,7 +272,7 @@ footer address a:focus {
     margin-bottom: 50px;
     text-align: center;
 }
-.projects .filter button {
+.projects-filter-button {
     font-family: inherit;
     margin: 0 4px;
     border: 0;
@@ -299,37 +286,37 @@ footer address a:focus {
     cursor: pointer;
     letter-spacing: inherit;
 }
-.projects .filter button.active,
-.projects .filter button:hover,
-.projects .filter button:focus {
+.projects-filter-button.active,
+.projects-filter-button:hover,
+.projects-filter-button:focus {
     background: var(--active-cl);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     color: var(--primary-white-color);
 }
-.projects ul {
+.projects-list {
     margin: 0 -15px;
     padding: 0;
     list-style: none;
 }
-.projects ul li {
+.projects-item {
     padding: 0 24px 20px;
     margin: 0 15px 30px;
 }
-.projects ul li a {
+.project-link {
     text-decoration: none;
     color: inherit;
 }
-.projects ul li img {
+.project-img {
     margin: 0 -24px 20px;
 }
-.projects ul li h2 {
+.project-title {
     margin: 0 0 4px;
     color: var(--secondary-cl);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
 }
-.projects ul li p {
+.project-descr {
     margin: 0;
     line-height: 2.14;
 }
