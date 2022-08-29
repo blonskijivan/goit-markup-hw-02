@@ -5,8 +5,11 @@
   --primary-white-color: #ffffff;
   --main-dark-bg-color: #2F303A;
   --light-gray-color: #F5F4FA;
+  --page-width: 1600px;
+  --section-width: 1200px;
 }
 body { 
+    margin: 0;
     background-color: var(--primary-white-color);
     color: var(--main-cl);
     font-family: 'Roboto', sans-serif;
@@ -20,11 +23,25 @@ header {
     max-width: var(--page-width);
     background-color: var(--primary-white-color);
     border-bottom: 1px solid #ECECEC;
+    display: flex;
+    align-items: center;
 }
 .header-inner {
+    display: flex;
+    align-items: center;
     margin: 0 auto;
+    height: 80px;
+    max-width: var(--section-width);
+}
+.main-nav {
+    display: flex;
+    flex: 1;
+    align-items: center;
 }
 .main-nav .logo {
+    display: flex;
+    flex: 1;
+    align-items: center;
     margin-right: 93px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -38,12 +55,16 @@ header {
     color: var(--secondary-cl);
 }
 .menu {
+    display: flex;
+    flex: 1;
     margin: 0;
     padding: 0;
     list-style: none;
 } 
 
 .menu-item {
+    display: flex;
+    flex: 1;
     margin-right: 50px;
 }
 
@@ -90,8 +111,13 @@ header {
 
 /*Section promo*/
 .promo {
+    
     max-width: 1600px;
     margin: 0 auto 94px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 600px;
     background-color: var(--main-dark-bg-color);
     color: var(--primary-white-color);
@@ -105,6 +131,9 @@ header {
     text-align: center;
 }
 .promo-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0;
     background-color: var(--active-cl);
     border: 0;
@@ -142,6 +171,7 @@ header {
     margin: -1px;
   } 
 .features-list {
+    display: flex;
     margin: 0 -10px;
     padding: 0;
     list-style: none;
@@ -167,9 +197,13 @@ header {
     max-width: var(--section-width);
 }
 .portfolio-list {
+    flex-direction: column;
+    display: flex;
     margin: 0 -15px;
     padding: 0;
     list-style: none;
+    background-color: var(--light-gray-color);
+    align-items: center;
 }
 .portfolio-item {
     margin: 0 15px;
@@ -191,6 +225,7 @@ header {
     color: var(--secondary-cl);
 }
 .team-list {
+    display: flex;
     margin: 0 -15px;
     padding: 0;
     list-style: none;
@@ -297,6 +332,8 @@ footer .logo span {
     margin: 0 -15px;
     padding: 0;
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 .projects-item {
     padding: 0 24px 20px;
