@@ -20,27 +20,21 @@ body {
 
 header {   
     margin: 0 auto;
-    max-width: var(--page-width);
     background-color: var(--primary-white-color);
     border-bottom: 1px solid #ECECEC;
-    display: flex;
-    align-items: center;
 }
 .header-inner {
     display: flex;
     align-items: center;
-    margin: 0 auto;
-    height: 80px;
-    max-width: var(--section-width);
+    margin: auto;
+    padding: 15 15px;
+    width: var(--section-width);
 }
 .main-nav {
-    display: flex;
-    flex: 1;
     align-items: center;
 }
 .main-nav .logo {
-    display: flex;
-    flex: 1;
+    padding: 24px 0;
     align-items: center;
     margin-right: 93px;
     font-family: 'Raleway', sans-serif;
@@ -55,26 +49,22 @@ header {
     color: var(--secondary-cl);
 }
 .menu {
-    display: flex;
-    flex: 1;
     margin: 0;
     padding: 0;
     list-style: none;
 } 
 
 .menu-item {
-    display: flex;
-    flex: 1;
-    margin-right: 50px;
+    margin-right: not-lest-hail;
 }
 
 .menu-link {
-    color: var(--secondary-cl);
     text-decoration: none;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
     font-weight: 500;
+    padding: 35px 0;
 }
 .menu-link.active,
 .menu-link:hover,
@@ -86,6 +76,7 @@ header {
     margin: 0;
     padding: 0;
     list-style: none;
+    margin-left: auto;
 }
 
 .contact-info-item {
@@ -111,14 +102,11 @@ header {
 
 /*Section promo*/
 .promo {
-    
-    max-width: 1600px;
-    margin: 0 auto 94px;
     display: flex;
     flex-direction: column;
+    padding: 32 32px;
     align-items: center;
     justify-content: center;
-    height: 600px;
     background-color: var(--main-dark-bg-color);
     color: var(--primary-white-color);
 }
@@ -155,7 +143,7 @@ header {
 
 /*Section features*/
 .features {
-    margin: 0 auto 94px;
+    padding: 94 94px;
     max-width: var(--section-width);
 }
 .visually-hidden {
@@ -172,7 +160,7 @@ header {
   } 
 .features-list {
     display: flex;
-    margin: 0 -10px;
+    margin: 0 -15px;
     padding: 0;
     list-style: none;
 }
@@ -197,12 +185,10 @@ header {
     max-width: var(--section-width);
 }
 .portfolio-list {
-    flex-direction: column;
     display: flex;
     margin: 0 -15px;
     padding: 0;
     list-style: none;
-    background-color: var(--light-gray-color);
     align-items: center;
 }
 .portfolio-item {
@@ -212,7 +198,6 @@ header {
 .team {
     margin: 0 auto;
     padding: 94px 0;
-    max-width: 1600px;
     background-color: var(--light-gray-color)
 }
 .section-title {
@@ -252,7 +237,6 @@ header {
 }
 /*Footer*/
 footer {
-    max-width: 1600px;
     margin: 0 auto;
     padding: 100px 0;
     background-color: var(--main-dark-bg-color);
@@ -261,6 +245,7 @@ footer {
 .footer-inner {
     max-width: var(--section-width);
     margin: 0 auto;
+    padding: 15 15px;
 }
 footer .logo {
     display: inline-block;
@@ -282,7 +267,13 @@ footer .logo span {
     list-style: none;
 } 
 .address-item {
-    margin-bottom: 9px;
+    margin-bottom: not:list-heil;
+    .element: .style;
+}
+.element.style {
+padding: 20 24px;
+}
+
 }
 .address-link {
     color: inherit;
@@ -300,24 +291,22 @@ footer .logo span {
     color: var(--active-cl);
 } 
 .projects {
-    max-width: var(--section-width);
-    margin: 94px auto;
+    padding: 94 94px;
 }
 .projects .filter {
+    display: flex;
     margin-bottom: 50px;
     text-align: center;
 }
 .projects-filter-button {
     font-family: inherit;
-    margin: 0 4px;
     border: 0;
-    height: 38px;
     background: var(--light-gray-color);
     border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.625;
-    padding: 0 22px;
+    padding: 6 22px;
     cursor: pointer;
     letter-spacing: inherit;
 }
@@ -329,15 +318,16 @@ footer .logo span {
     color: var(--primary-white-color);
 }
 .projects-list {
-    margin: 0 -15px;
+    margin: 0 30 -30px;
     padding: 0;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
 }
 .projects-item {
-    padding: 0 24px 20px;
-    margin: 0 15px 30px;
+    margin: 0 30 30px 0;
+    width: 370px;
+
 }
 .project-link {
     text-decoration: none;
